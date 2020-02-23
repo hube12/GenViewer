@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
 			viewmap(&g.layers[g.layerNum - 1], biomeColours, x, z, sizeX, sizeZ, 1, char_array);
 		}
 	} else {
-		int64_t seed = 1;
+		int64_t seed = std::stoll(argv[2]);
 		std::string name = "img/" + std::to_string(seed) + ".png";
 		int n = name.length();
 		char char_array[n + 1];
